@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cipher Association | Department of CSE</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@300;400;600;800&display=swap');
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #0b0f17;
+      color: #c9d1d9;
+    }
+    .font-mono {
+      font-family: 'Fira Code', monospace;
+    }
+    .glow-blue {
+      box-shadow: 0 0 25px rgba(59, 130, 246, 0.25);
+    }
+  </style>
+</head>
+<body class="selection:bg-blue-500 selection:text-white">
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 w-full z-50 bg-[#0b0f17]/90 backdrop-blur-md border-b border-gray-800">
+    <div class="max-w-7xl mx-auto px-6 py-3 flex justify-between items-center">
+      <a href="#" class="flex items-center space-x-3 font-mono text-xl font-bold text-white">
+        <!-- Cipher Logo -->
+        <img src="images/cipher-logo.jpg" alt="Cipher Logo" class="w-10 h-10 object-cover rounded-full border border-blue-400/50">
+        <span>CIPHER_CSE</span>
+      </a>
+      <div class="hidden md:flex space-x-8 font-mono text-sm">
+        <a href="#about" class="hover:text-blue-400 transition">/about</a>
+        <a href="#team" class="hover:text-blue-400 transition">/team</a>
+        <a href="#events" class="hover:text-blue-400 transition">/events</a>
+        <a href="#mentors" class="hover:text-blue-400 transition">/mentors</a>
+      </div>
+      <a href="#events" class="bg-blue-600 hover:bg-blue-500 text-white font-mono text-sm px-4 py-2 rounded-lg transition">
+        View Activities
+      </a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="min-h-screen flex items-center justify-center pt-24 px-6 relative overflow-hidden">
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(59,130,246,0.12),transparent_70%)]"></div>
+    <div class="max-w-4xl mx-auto text-center relative z-10">
+      <div class="inline-flex items-center space-x-2 bg-blue-950/60 border border-blue-800/80 px-3 py-1 rounded-full text-xs font-mono text-blue-400 mb-6">
+        <i data-lucide="terminal" class="w-4 h-4"></i>
+        <span>Department of Computer Science and Engineering</span>
+      </div>
+      <h1 class="text-5xl md:text-7xl font-extrabold text-white tracking-tight mb-6">
+        Cipher Association
+      </h1>
+      <p class="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto mb-8">
+        Empowering CSE students through technical excellence, AI workshops, hackathons, and departmental initiatives.
+      </p>
+      <div class="flex flex-col sm:flex-row justify-center gap-4 font-mono">
+        <a href="#events" class="bg-blue-600 hover:bg-blue-500 text-white px-8 py-3 rounded-lg font-semibold glow-blue transition flex items-center justify-center gap-2">
+          <i data-lucide="cpu" class="w-4 h-4"></i> Explore Events
+        </a>
+        <a href="https://drive.google.com/drive/u/0/folders/1ZRPO-KWvoUzIUlOr6D4kAkF47DijiqMR" target="_blank" class="border border-gray-700 hover:border-gray-500 text-gray-300 px-8 py-3 rounded-lg font-semibold transition flex items-center justify-center gap-2">
+          <i data-lucide="folder-git-2" class="w-4 h-4"></i> Lumière Drive
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Student Core Team Section -->
+  <section id="team" class="py-20 px-6 bg-[#121824] border-y border-gray-800">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-16">
+        <span class="text-blue-400 font-mono text-sm">&gt; Leadership</span>
+        <h2 class="text-3xl font-bold text-white mt-2">Executive Student Committee</h2>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 font-mono">
+        <!-- President -->
+        <div class="bg-[#0b0f17] border border-blue-900/50 rounded-xl p-6 text-center hover:border-blue-500 transition">
+          <div class="w-20 h-20 bg-blue-950/60 rounded-full mx-auto mb-4 flex items-center justify-center text-blue-400 border border-blue-800">
+            <i data-lucide="shield-check" class="w-10 h-10"></i>
+          </div>
+          <h3 class="text-white font-bold text-lg">Elston Herold Pereira</h3>
+          <p class="text-xs text-blue-400 mt-1 uppercase tracking-wider font-semibold">President</p>
+        </div>
+
+        <!-- Vice President -->
+        <div class="bg-[#0b0f17] border border-gray-800 rounded-xl p-6 text-center hover:border-blue-500 transition">
+          <div class="w-20 h-20 bg-blue-950/60 rounded-full mx-auto mb-4 flex items-center justify-center text-blue-400 border border-blue-800">
+            <i data-lucide="user-check" class="w-10 h-10"></i>
+          </div>
+          <h3 class="text-white font-bold text-lg">Raynell Lewis</h3>
+          <p class="text-xs text-blue-400 mt-1 uppercase tracking-wider font-semibold">Vice President</p>
+        </div>
+
+        <!-- Secretary -->
+        <div class="bg-[#0b0f17] border border-gray-800 rounded-xl p-6 text-center hover:border-blue-500 transition">
+          <div class="w-20 h-20 bg-blue-950/60 rounded-full mx-auto mb-4 flex items-center justify-center text-blue-400 border border-blue-800">
+            <i data-lucide="file-text" class="w-10 h-10"></i>
+          </div>
+          <h3 class="text-white font-bold text-lg">Chaitra R M</h3>
+          <p class="text-xs text-blue-400 mt-1 uppercase tracking-wider font-semibold">Secretary</p>
+        </div>
+
+        <!-- Treasurer -->
+        <div class="bg-[#0b0f17] border border-gray-800 rounded-xl p-6 text-center hover:border-blue-500 transition">
+          <div class="w-20 h-20 bg-blue-950/60 rounded-full mx-auto mb-4 flex items-center justify-center text-blue-400 border border-blue-800">
+            <i data-lucide="wallet" class="w-10 h-10"></i>
+          </div>
+          <h3 class="text-white font-bold text-lg">Nazmin Ziya</h3>
+          <p class="text-xs text-blue-400 mt-1 uppercase tracking-wider font-semibold">Treasurer</p>
+        </div>
+
+        <!-- Joint Treasurer -->
+        <div class="bg-[#0b0f17] border border-gray-800 rounded-xl p-6 text-center hover:border-blue-500 transition sm:col-span-2 lg:col-span-1">
+          <div class="w-20 h-20 bg-blue-950/60 rounded-full mx-auto mb-4 flex items-center justify-center text-blue-400 border border-blue-800">
+            <i data-lucide="credit-card" class="w-10 h-10"></i>
+          </div>
+          <h3 class="text-white font-bold text-lg">Jeslin Ninora</h3>
+          <p class="text-xs text-blue-400 mt-1 uppercase tracking-wider font-semibold">Joint Treasurer</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Events Section -->
+  <section id="events" class="py-20 px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-16">
+        <span class="text-blue-400 font-mono text-sm">&gt; Key Departmental Initiatives</span>
+        <h2 class="text-3xl font-bold text-white mt-2">Recent Events</h2>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- Event Card 1 (PROMPT OPS-2K26) -->
+        <div class="bg-[#121824] border border-gray-800 rounded-xl overflow-hidden hover:border-blue-500/50 transition flex flex-col justify-between">
+          <div>
+            <div class="h-56 bg-gray-900 overflow-hidden relative border-b border-gray-800">
+              <img src="images/prompt-ops-1.jpg" alt="PROMPT OPS-2K26" class="w-full h-full object-cover">
+              <span class="absolute top-3 right-3 text-xs font-mono bg-blue-950 text-blue-400 border border-blue-800 px-3 py-1 rounded-full">25 March 2026</span>
+            </div>
+
+            <div class="p-6">
+              <h3 class="text-2xl font-bold text-white mb-3">PROMPT OPS-2K26</h3>
+              <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                Organized by AgentBlazer Club & Cipher under the guidance of faculty. A technical competition focused on prompt engineering and AI tools (mapped to PO4, PO5, PO8, PO11).
+              </p>
+
+              <!-- Winners Highlights -->
+              <div class="bg-[#0b0f17] p-4 rounded-lg border border-gray-800 font-mono text-xs mb-4 space-y-2">
+                <div class="text-blue-400 font-bold mb-1">[ TOP HONORS & WINNERS ]</div>
+                <p class="text-gray-300"><span class="text-yellow-500">Track 1 (1st Year):</span> Chinmayee, Chris Royston Monteiro, Deeksha Ravi Moger</p>
+                <p class="text-gray-300"><span class="text-yellow-500">Track 2 (2nd Year):</span> Harimurali KS, Venus Suhani D’Lima, Venisha Snehal D’Souza</p>
+              </div>
+            </div>
+          </div>
+          <div class="p-6 pt-0 text-xs font-mono text-gray-500 border-t border-gray-800/80">
+            Coordinated by Ms. Nisha J Roche, Ms. Jaishma K, & Dr. Melwyn D’Souza (HOD)
+          </div>
+        </div>
+
+        <!-- Event Card 2 (Lumière / Event Session) -->
+        <div class="bg-[#121824] border border-gray-800 rounded-xl overflow-hidden hover:border-blue-500/50 transition flex flex-col justify-between">
+          <div>
+            <div class="h-56 bg-gray-900 overflow-hidden relative border-b border-gray-800">
+              <img src="images/prompt-ops-2.jpg" alt="Cipher Event Session" class="w-full h-full object-cover">
+              <span class="absolute top-3 right-3 text-xs font-mono bg-amber-950 text-amber-400 border border-amber-800 px-3 py-1 rounded-full">29 October 2025</span>
+            </div>
+
+            <div class="p-6">
+              <h3 class="text-2xl font-bold text-white mb-3">Lumière – The Gala</h3>
+              <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                Branch entry formal gathering welcoming students into the CSE department under the theme <i>“Where Glam Meets Glow.”</i> Hosted at Kalam Auditorium.
+              </p>
+              
+              <a href="https://drive.google.com/drive/u/0/folders/1ZRPO-KWvoUzIUlOr6D4kAkF47DijiqMR" target="_blank" class="inline-flex items-center gap-2 text-sm font-mono text-blue-400 hover:text-blue-300">
+                <i data-lucide="external-link" class="w-4 h-4"></i> View Lumière Drive Photos
+              </a>
+            </div>
+          </div>
+          <div class="p-6 pt-0 text-xs font-mono text-gray-500 border-t border-gray-800/80">
+            Organized by Cipher Association
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mentors Section -->
+  <section id="mentors" class="py-20 px-6 bg-[#121824] border-t border-gray-800">
+    <div class="max-w-5xl mx-auto">
+      <div class="text-center mb-12">
+        <span class="text-blue-400 font-mono text-sm">&gt; Guidance & Mentorship</span>
+        <h2 class="text-3xl font-bold text-white mt-2">Departmental Mentors</h2>
+      </div>
+
+      <div class="grid sm:grid-cols-3 gap-6 font-mono text-center">
+        <div class="bg-[#0b0f17] border border-gray-800 rounded-xl p-6">
+          <div class="w-16 h-16 bg-blue-900/30 rounded-full mx-auto mb-4 flex items-center justify-center text-blue-400 border border-blue-800">
+            <i data-lucide="award" class="w-8 h-8"></i>
+          </div>
+          <h4 class="text-white font-bold">Dr. Melwyn D’Souza</h4>
+          <p class="text-xs text-gray-400 mt-1">Head of Department (CSE)</p>
+        </div>
+        <div class="bg-[#0b0f17] border border-gray-800 rounded-xl p-6">
+          <div class="w-16 h-16 bg-blue-900/30 rounded-full mx-auto mb-4 flex items-center justify-center text-blue-400 border border-blue-800">
+            <i data-lucide="user-check" class="w-8 h-8"></i>
+          </div>
+          <h4 class="text-white font-bold">Ms. Nisha J Roche</h4>
+          <p class="text-xs text-gray-400 mt-1">Faculty Coordinator</p>
+        </div>
+        <div class="bg-[#0b0f17] border border-gray-800 rounded-xl p-6">
+          <div class="w-16 h-16 bg-blue-900/30 rounded-full mx-auto mb-4 flex items-center justify-center text-blue-400 border border-blue-800">
+            <i data-lucide="user-check" class="w-8 h-8"></i>
+          </div>
+          <h4 class="text-white font-bold">Ms. Jaishma K</h4>
+          <p class="text-xs text-gray-400 mt-1">Faculty Coordinator</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-8 border-t border-gray-800 text-center text-gray-500 font-mono text-sm">
+    <p>&copy; 2026 Cipher Association | Department of CSE</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
